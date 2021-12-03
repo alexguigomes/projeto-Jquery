@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="utf-8">
+        <title>EVENTOS DO MOUSE</title>
+
+            <!--Jquery-->
+            <script src="jquery2.2.0.js"></script>
+
+            <script type="text/javascript">
+
+            $(document).ready(function(){
+ 
+                                       //CODIGOS PARA INTERAÇÃO DO MOUSE
+
+                //click (após clicar na caixa cinza aparecera uma caixa de dialogo)
+                //dblclick (após clickar duas vaezs na caixa cinza aparecera uma caixa de dialogo)
+                //mousedown (após segurar o click dentro da caixa cinza aparecera uma caixa de dialogo)
+                //mouseover (após colocar o cursor dentro da caixa cinza aparecera uma caixa de dialogo)
+                //mouseout (após tirar o cursor da caixa cinza aparecera uma caixa de dialogo)
+                //comando responsavel por disparar um alert após dar 2 clicks na caixa cinza 
+               
+                $('#div1').click( function(){
+                    alert('caixa cinza clicada');
+                });
+
+                $('#div2').dblclick( function(){
+                    alert('caixa cinza clicada duas vezes');
+                });
+                
+                $('#div3').mousedown( function(){
+                    alert('caixa cinza foi clicada segurando o click');
+                });
+
+                $('#div4').mouseover( function(){
+                    alert('cursor foi colocado na caixa');
+                });
+
+                $('#div5').mouseout( function(){
+                    alert('cursor foi retirado da caixa cinza');
+                });
+
+
+
+
+            });
+            </script>
+    
+    </head>
+
+    <!--caixas-->
+    <body>
+        <div id="div1" style="height: 150px; width: 150px; background: #ccc"></div>
+        <div id="div2" style="height: 150px; width: 150px; background: rgb(255, 0, 0)"></div>
+        <div id="div3" style="height: 150px; width: 150px; background: rgb(21, 255, 0)"></div>
+        <div id="div4" style="height: 150px; width: 150px; background: rgb(0, 110, 255)"></div>
+        <div id="div5" style="height: 150px; width: 150px; background: rgb(255, 0, 149)"></div>
+    </body>
+</html>
